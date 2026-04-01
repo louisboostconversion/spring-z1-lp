@@ -1,0 +1,77 @@
+.final-cta {
+  background: #FDF9F5;
+  padding: 0;
+}
+
+.final-cta-bg {
+  position: relative;
+  overflow: hidden;
+}
+
+.final-cta-bg-img {
+  width: 100%;
+  max-height: 500px;
+  display: block;
+  object-fit: cover;
+}
+
+.final-cta-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 32px 20px;
+}
+
+.final-cta-surtitle {
+  font-size: 13px;
+  font-weight: 400;
+  color: #fff;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.final-cta-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.3;
+  margin-bottom: 24px;
+}
+
+.final-cta-btn {
+  max-width: 360px;
+}
+
+.final-cta-shipping {
+  margin-top: 12px;
+  font-size: 14px;
+  color: #fff;
+}
+
+@media (min-width: 900px) {
+  .final-cta {
+    padding: 60px 40px;
+  }
+
+  .final-cta-bg {
+    max-width: 1280px;
+    margin: 0 auto;
+    border-radius: 16px;
+  }
+
+  .final-cta-bg-img {
+    max-height: 500px;
+  }
+
+  .final-cta-title {
+    font-size: 36px;
+  }
+
+  .final-cta-surtitle {
+    font-size: 16px;
+  }
+}

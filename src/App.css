@@ -1,0 +1,34 @@
+/* Desktop header/footer */
+.header-desktop,
+.footer-desktop {
+  display: none;
+}
+
+/* Mobile: show certs */
+.certs-mobile-only {
+  display: block;
+}
+
+@media (min-width: 900px) {
+  .header-desktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background: var(--cream);
+  }
+
+  .footer-desktop {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 60px 40px;
+    background: #FDF9F5;
+    width: 100%;
+    text-align: center;
+  }
+
+  .certs-mobile-only {
+    display: none;
+  }
+}

@@ -1,0 +1,41 @@
+.assurance-bar {
+  background: #fff;
+  padding: 0.75rem 0;
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+}
+
+.assurance-track {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  width: max-content;
+  animation: assurance-scroll 30s linear infinite;
+}
+
+.assurance-track:hover {
+  animation-play-state: paused;
+}
+
+.assurance-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 12px;
+  font-weight: 400;
+  color: #333;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.assurance-item img {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+@keyframes assurance-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}

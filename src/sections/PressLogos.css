@@ -1,0 +1,39 @@
+.press-marquee {
+  overflow: hidden;
+  background: var(--cream);
+  padding: 24px 0;
+}
+
+.press-marquee-inner {
+  display: inline-flex;
+  white-space: nowrap;
+  animation: press-scroll 15s linear infinite;
+  align-items: center;
+  gap: 20px;
+}
+
+.press-marquee-inner span {
+  padding: 0;
+  flex-shrink: 0;
+}
+
+.press-marquee-inner img {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+
+@keyframes press-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@media (min-width: 900px) {
+  .press-marquee {
+    padding: 32px 0;
+  }
+
+  .press-marquee-inner img {
+    height: 50px;
+  }
+}

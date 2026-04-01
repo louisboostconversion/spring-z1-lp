@@ -1,0 +1,125 @@
+/* === RESET & BASE === */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  background: #fff;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+}
+
+/* === VARIABLES === */
+:root {
+  --blue: #3A8DFF;
+  --dark: #333333;
+  --dark-bg: #1a1a1a;
+  --cream: #FBF3EA;
+  --light-blue-bg: #F1F4F9;
+  --faq-bg: #EAF0EF;
+  --yellow-cta: #FCEA54;
+  --yellow-accent: #FECB20;
+  --green: #00B67A;
+  --teal: #83BBB8;
+  --muted: #918F8F;
+  --gray: #666666;
+  --white: #fff;
+}
+
+/* === CTA BUTTON (YELLOW) === */
+.cta-yellow {
+  display: block;
+  background: var(--yellow-cta);
+  color: var(--dark);
+  font-weight: 700;
+  font-size: 16px;
+  padding: 16px 28px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 500px;
+  transition: all 0.3s ease;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  border: none;
+}
+
+.cta-yellow:hover {
+  background: #fab005;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.cta-yellow s {
+  font-weight: 400;
+  color: var(--gray);
+  margin-right: 4px;
+}
+
+/* === CTA SUB-INFO === */
+.cta-sub-info {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 12px;
+  font-size: 14px;
+  color: var(--dark);
+}
+
+.cta-sub-info span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.cta-sub-info .sub-label {
+  font-weight: 500;
+}
+
+.cta-sub-info .sub-detail {
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--gray);
+}
+
+/* === SECTION BASE === */
+.section {
+  padding: 40px 20px;
+}
+
+.section-inner {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (min-width: 900px) {
+  .section {
+    padding: 64px 40px;
+  }
+}
