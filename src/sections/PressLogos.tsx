@@ -9,7 +9,7 @@ const logos = [
 
 export default function PressLogos() {
   // Repeat logos 4x for seamless infinite scroll
-  const repeated = [...logos, ...logos, ...logos, ...logos]
+  const repeated = [...logos, ...logos, ...logos, ...logos, ...logos, ...logos, ...logos, ...logos]
 
   return (
     <section className="press-marquee">

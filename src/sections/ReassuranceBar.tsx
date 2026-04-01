@@ -7,7 +7,7 @@ const items = [
 ]
 
 export default function ReassuranceBar() {
-  const repeated = [...items, ...items, ...items, ...items]
+  const repeated = [...items, ...items, ...items, ...items, ...items, ...items, ...items, ...items]
 
   return (
     <div className="assurance-bar">
