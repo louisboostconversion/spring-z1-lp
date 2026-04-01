@@ -11,8 +11,18 @@ export default function ReassuranceBar() {
 
   return (
     <div className="assurance-bar">
-      <div className="assurance-track">
+      {/* Mobile: scrolling marquee */}
+      <div className="assurance-track assurance-mobile">
         {repeated.map((item, i) => (
+          <span key={i} className="assurance-item">
+            <img src={item.icon} alt="" width="22" height="22" />
+            {item.text}
+          </span>
+        ))}
+      </div>
+      {/* Desktop: static centered */}
+      <div className="assurance-track assurance-desktop">
+        {items.map((item, i) => (
           <span key={i} className="assurance-item">
             <img src={item.icon} alt="" width="22" height="22" />
             {item.text}

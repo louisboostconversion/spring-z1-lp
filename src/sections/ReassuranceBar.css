@@ -5,7 +5,7 @@
   overflow: hidden;
 }
 
-.assurance-track {
+.assurance-mobile {
   display: flex;
   align-items: center;
   gap: 18px;
@@ -13,8 +13,8 @@
   animation: assurance-scroll 30s linear infinite;
 }
 
-.assurance-track:hover {
-  animation-play-state: paused;
+.assurance-desktop {
+  display: none;
 }
 
 .assurance-item {
@@ -38,4 +38,21 @@
 @keyframes assurance-scroll {
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); }
+}
+
+@media (min-width: 900px) {
+  .assurance-mobile {
+    display: none;
+  }
+
+  .assurance-desktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+  }
+
+  .assurance-item {
+    font-size: 14px;
+  }
 }

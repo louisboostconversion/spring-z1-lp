@@ -8,15 +8,24 @@ const logos = [
 ]
 
 export default function PressLogos() {
-  // Repeat logos 4x for seamless infinite scroll
   const repeated = [...logos, ...logos, ...logos, ...logos, ...logos, ...logos, ...logos, ...logos]
 
   return (
-    <section className="press-marquee">
-      <div className="press-marquee-inner">
+    <section className="press-section">
+      {/* Mobile: scrolling */}
+      <div className="press-marquee press-mobile">
         {repeated.map((src, i) => (
           <span key={i}><img src={src} alt="Press logo" /></span>
         ))}
+      </div>
+      {/* Desktop: static centered */}
+      <div className="press-static press-desktop">
+        <p className="press-label">ILS PARLENT DE NOUS</p>
+        <div className="press-logos-row">
+          {logos.map((src, i) => (
+            <span key={i}><img src={src} alt="Press logo" /></span>
+          ))}
+        </div>
       </div>
     </section>
   )
